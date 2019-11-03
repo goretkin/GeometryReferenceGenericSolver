@@ -1,0 +1,17 @@
+name = "GeometryReferenceGenericSolver"
+uuid = "d6ca4959-7fdd-570f-b290-715812aafb9c"
+authors = ["Gustavo Goretkin <gustavo.goretkin@gmail.com>"]
+version = "0.1.1"
+
+[deps]
+GeometryTypes = "4d00f742-c7ba-57c2-abde-4428a4b178cb"
+Parametron = "41fac6d6-0ffa-5bcc-b863-17dd4947be41"
+
+[compat]
+julia = "^1"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
