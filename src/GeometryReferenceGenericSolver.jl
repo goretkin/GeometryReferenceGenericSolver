@@ -47,7 +47,8 @@ function find_minimum_distance(convex1::NTuple{M1, PointT}, convex2::NTuple{M2, 
         eps_prim_inf=1e-8,
         eps_dual_inf=1e-8,
         eps_abs=1e-8,
-        eps_rel=1e-6)
+        eps_rel=1e-6,
+        scaling=0)
     )
 
     # from https://github.com/tkoolen/Parametron.jl/blob/d824c9f9ff4ba7bc38a9407129504bb8ecca31ee/test/model.jl#L22

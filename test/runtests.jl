@@ -11,7 +11,7 @@ r = find_minimum_distance((Point(-1,0), Point(1,0)), (Point(0,-1), Point(0, 1)))
 @test norm(r.p1 - [0, 0]) < 100eps()
 @test norm(r.p2 - [0, 0]) < 100eps()
 
-xy_plane = 1e8 .* (Point(-1,0,0), Point(1,0,0), Point(0, 1, 0))
+xy_plane = 1e6 .* (Point(-1,0,0), Point(1,0,0), Point(0, 1, 0))
 
 seed!(1234)
 @testset "project xy" begin
@@ -47,3 +47,6 @@ end
 p = Point(15099.411397006435, 63329.17689456945, 489.2398433903766)
 p = Point(56270.48118496456, 53948.45819773468, 34.889982642960504)
 p = Point(37517.76357686068, 84362.38878880453, 233.50717418757495)
+
+c1 = xy_plane
+c2 = (p, )

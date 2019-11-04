@@ -3,6 +3,12 @@
 [[Base64]]
 uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
 
+[[BenchmarkTools]]
+deps = ["JSON", "Printf", "Statistics"]
+git-tree-sha1 = "90b73db83791c5f83155016dd1cc1f684d4e1361"
+uuid = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
+version = "0.4.3"
+
 [[BinaryProvider]]
 deps = ["Libdl", "SHA"]
 git-tree-sha1 = "29995a7b317bbd06be147e1974a3541ce2502dca"
@@ -77,6 +83,12 @@ git-tree-sha1 = "2ebe60d7343962966d1779a74a760f13217a6901"
 uuid = "c8e1da08-722c-5040-9ed9-7db0dc04731e"
 version = "1.2.0"
 
+[[JSON]]
+deps = ["Dates", "Mmap", "Parsers", "Unicode"]
+git-tree-sha1 = "b34d7cef7b337321e97d22242c3c2b91f476748e"
+uuid = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
+version = "0.21.0"
+
 [[LibGit2]]
 uuid = "76f85450-5226-5b5a-8eaa-529ad045b433"
 
@@ -101,10 +113,10 @@ deps = ["Base64"]
 uuid = "d6f4376e-aef5-505a-96c1-9c027394607a"
 
 [[MathOptInterface]]
-deps = ["Compat", "Unicode"]
-git-tree-sha1 = "5d3de69c9220610d0336ab45d3eb8b6ac7a7c807"
+deps = ["BenchmarkTools", "LinearAlgebra", "OrderedCollections", "SparseArrays", "Test", "Unicode"]
+git-tree-sha1 = "78427dcc212e0c0ad9658049bc56a50303ad9737"
 uuid = "b8f27783-ece8-5eb3-8dc8-9495eed66fee"
-version = "0.8.4"
+version = "0.9.7"
 
 [[MathProgBase]]
 deps = ["Compat"]
@@ -117,9 +129,9 @@ uuid = "a63ad114-7e13-5084-954f-fe012c677804"
 
 [[OSQP]]
 deps = ["BinaryProvider", "Libdl", "LinearAlgebra", "MathOptInterface", "MathProgBase", "SparseArrays"]
-git-tree-sha1 = "0c0571823def0d18051cdbe4d76767fc285aa9f0"
+git-tree-sha1 = "b44022a2a3f97a26cdcbf4ce37aeb7dc49c3d972"
 uuid = "ab2f91bb-94b4-55e3-9ba0-7f65df51de79"
-version = "0.5.2"
+version = "0.6.0"
 
 [[OrderedCollections]]
 deps = ["Random", "Serialization", "Test"]
@@ -128,10 +140,16 @@ uuid = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
 version = "1.1.0"
 
 [[Parametron]]
-deps = ["DocStringExtensions", "FunctionWrappers", "LinearAlgebra", "MacroTools", "MathOptInterface"]
-git-tree-sha1 = "c514fb32253215ed36e72cce93a343b0ba282806"
+deps = ["DocStringExtensions", "FunctionWrappers", "LinearAlgebra", "MacroTools", "MathOptInterface", "Random", "Test"]
+git-tree-sha1 = "c283893f6759e5448f5f5a5cc20b172f8a96196b"
 uuid = "41fac6d6-0ffa-5bcc-b863-17dd4947be41"
-version = "0.9.1"
+version = "0.8.0"
+
+[[Parsers]]
+deps = ["Dates", "Test"]
+git-tree-sha1 = "ef0af6c8601db18c282d092ccbd2f01f3f0cd70b"
+uuid = "69de0a69-1ddd-5017-9359-2bf0b02dc9f0"
+version = "0.3.7"
 
 [[Pkg]]
 deps = ["Dates", "LibGit2", "Markdown", "Printf", "REPL", "Random", "SHA", "UUIDs"]
