@@ -3,6 +3,12 @@
 [[Base64]]
 uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
 
+[[BinaryProvider]]
+deps = ["Libdl", "SHA"]
+git-tree-sha1 = "29995a7b317bbd06be147e1974a3541ce2502dca"
+uuid = "b99e7846-7c00-51b0-8f62-c81ae34c0232"
+version = "0.5.7"
+
 [[CSTParser]]
 deps = ["Tokenize"]
 git-tree-sha1 = "99dda94f5af21a4565dc2b97edf6a95485f116c3"
@@ -100,8 +106,20 @@ git-tree-sha1 = "5d3de69c9220610d0336ab45d3eb8b6ac7a7c807"
 uuid = "b8f27783-ece8-5eb3-8dc8-9495eed66fee"
 version = "0.8.4"
 
+[[MathProgBase]]
+deps = ["Compat"]
+git-tree-sha1 = "3bf2e534e635df810e5f4b4f1a8b6de9004a0d53"
+uuid = "fdba3010-5040-5b88-9595-932c9decdf73"
+version = "0.7.7"
+
 [[Mmap]]
 uuid = "a63ad114-7e13-5084-954f-fe012c677804"
+
+[[OSQP]]
+deps = ["BinaryProvider", "Libdl", "LinearAlgebra", "MathOptInterface", "MathProgBase", "SparseArrays"]
+git-tree-sha1 = "0c0571823def0d18051cdbe4d76767fc285aa9f0"
+uuid = "ab2f91bb-94b4-55e3-9ba0-7f65df51de79"
+version = "0.5.2"
 
 [[OrderedCollections]]
 deps = ["Random", "Serialization", "Test"]
